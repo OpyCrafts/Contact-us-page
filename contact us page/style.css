@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+HU:wght@100..400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1f242d;
+    min-height: 100vh
+}
+
+.contact h2{
+    font-size: 40px;
+    color: #0ef;
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+.contact form {
+  width: 600px;
+  text-align: center;
+}
+
+form .input-box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.input-box .input-field{
+    width: 48.5%;
+}
+
+.field .item {
+    width: 100%;
+    padding: 18px;
+    background-color: transparent;
+    border: 2px solid #0ef;
+    outline: none;
+    border-radius: 6px;
+    font-size: 16px;
+    color: #ededed;
+    margin: 12px 0;
+}
+
+.field .item::placeholder{
+    color: rgba(225, 225, 225, .3 );
+}
+
+.field .error-txt{
+    font-size: 12.5px;
+    margin: -5px 0 10px;
+    color: red ;
+    text-align: left;
+    display: none;
+}
+
+form .textarea-field .item {
+    resize: none;
+}
+
+form .textarea-field .error-txt{
+    margin-top: -10px;
+}
+
+form button {
+    padding: 12px 32px;
+    background: #0ef;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    box-shadow: 0 0 10px #0ef;
+    font-size: 16px;
+    color: #333;
+    letter-spacing: 1px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: .5s;
+}
+
+form button:hover{
+    box-shadow: none;
+}
+
+@media( max-width:760px) {
+
+    .contact {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+
+    .input-box,.input-field,
+     .textarea-field,.text  {
+        display: inline;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .item:hover{
+        border: 2px solid black ;
+        box-shadow: 0px 1px 0px 0px black;
+        color: #0ef;
+    }
+
+    .contact h2{
+        font-size: 35px;
+        border-bottom: 1px solid ;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .textarea-field{
+        max-width: 100%;
+    }
+
+    textarea{
+        width: 200px;
+    }
+}
